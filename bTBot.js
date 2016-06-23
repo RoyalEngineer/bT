@@ -237,7 +237,7 @@
 
     var basicBot = {
         version: "2.8.17",
-        status: false,
+        status: true,
         name: "bTBot",
         loggedInID: null,
         scriptLink: "https://raw.githubusercontent.com/RoyalEngineer/bT/master/bTBot.js",
@@ -303,8 +303,8 @@
             themeLink: null,
             fbLink: "https://www.facebook.com/bttdm.samp",
             youtubeLink: null,
-			forum: "http://bttdm.com",
-            website: null,
+	    forum: "http://forum.bttdm.com",
+            website: "http://bttdm.com",
             intervalMessages: [],
             messageInterval: 5,
             songstats: true,
