@@ -237,7 +237,7 @@
 
     var basicBot = {
         version: "2.8.17",
-        status: true,
+        status: false,
         name: "bTBot",
         loggedInID: null,
         scriptLink: "https://raw.githubusercontent.com/RoyalEngineer/bT/master/bTBot.js",
@@ -301,9 +301,8 @@
             opLink: null,
             rulesLink: "http://forum.bttdm.com/index.php?topic=49100.msg376074#msg376074",
             themeLink: null,
-            fbLink: "https://www.facebook.com/bttdm.samp",
+            fbLink: "https://www.facebook.com/bttdm.samp",,
             youtubeLink: null,
-	    forum: "http://forum.bttdm.com",
             website: "http://bttdm.com",
             intervalMessages: [],
             messageInterval: 5,
@@ -2234,20 +2233,6 @@
                             basicBot.room.skippable = true
                         }, 5 * 1000);
 
-                    }
-                }
-            },
-
-            forumCommand: {
-                command: 'forum',
-                rank: 'user',
-                type: 'exact',
-                functionality: function (chat, cmd) {
-                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
-                    else {
-                        if (typeof basicBot.settings.forum === "string")
-                            API.sendChat(subChat(basicBot.chat.forum, {link: basicBot.settings.forum}));
                     }
                 }
             },
